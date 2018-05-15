@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 8</name>
+    <events>
+        <event-block sid="6758809762128781">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2349682100262847" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Text15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1651285520293385" type="System">
+                    <param id="0" name="Layout">Kinematics</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7565483681999009">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5880307315235028" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Text27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2082870468514351" type="System">
+                    <param id="0" name="Layout">Parabola</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9461720324585085">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8260280114460346" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Text26</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6363111741256571" type="System">
+                    <param id="0" name="Layout">hProjectile</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

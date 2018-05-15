@@ -1,0 +1,1334 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>motion</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3beny8bkz2lwm</unique-id>
+    <saved-with-version>20600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="List" version="1">List</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1000</width>
+        <height>490</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Parabola</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="platform" sid="7934761687272739">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8756075872263718">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="5382542770882024">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6371099048950394" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UI" sid="167115228063373">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5386800739667828" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textExp" sid="3411190921626637">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3398295639308663">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="textLabel" sid="5403221594582434">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="691903237508049">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="textA" sid="2379516745015751">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="9900858179099732">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="car" sid="9799082624297935">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="started" sid="4107731602854373" type="number" />
+                <instance-variable name="direction" sid="6985118676920543" type="number" />
+                <instance-variable name="position" sid="5568562547446361" type="number" />
+                <instance-variable name="movingtime" sid="7799948209012837" type="number" />
+                <instance-variable name="maxdistance" sid="4110922301809017" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Physics" sid="2504566007913355">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Car" sid="8492042335621828">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="3583681045828133">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2626740223147235" speed="5">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.52" original-source="E:\car2.png">
+                        <collision-poly>
+                            <point x="0.104478" y="0.28" />
+                            <point x="0.492537" y="0" />
+                            <point x="0.850746" y="0.4" />
+                            <point x="0.970149" y="0.48" />
+                            <point x="0.955224" y="0.88" />
+                            <point x="0.492537" y="0.88" />
+                            <point x="0.0597015" y="0.84" />
+                            <point x="0.0149254" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button" sid="7046618293054373">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2842898063963879">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Sprite2" sid="9134388685148224">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8483439920201897" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503106" original-source="E:\hill.png">
+                        <collision-poly>
+                            <point x="0.15445" y="0.36646" />
+                            <point x="0.5" y="0.546584" />
+                            <point x="0.774869" y="0.534162" />
+                            <point x="0.882199" y="0.496894" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0183246" y="0.956522" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="482742336559476">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="248178320236588">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3967106732066467" speed="5">
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.502924" original-source="E:\Game Plot\obs.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0017094" y="0.99537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="7763646874874494">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\grass.png" />
+        </object-type>
+        <object-type name="TextBox" sid="6486879085770899">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TextBox2" sid="2115536788345654">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TextBox3" sid="4819546023947757">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TextBox4" sid="6335764763051863">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TextBox5" sid="8506230754114158">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="9158669757151155">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button2" sid="2804410950740899">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="6001657078168738">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Button3" sid="6980796235849402">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="1033364279016692">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Button4" sid="2623057410560359">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2487747390911332">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="List" sid="6198027835435255">
+            <plugin id="List" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7253423963385515">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="List2" sid="9886818824986906">
+            <plugin id="List" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="9712913558136339">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="List3" sid="9215678974625388">
+            <plugin id="List" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7095182960247179">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox6" sid="5356511584547373">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="5463678977830496">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox7" sid="5433992685386566">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="5631566391307153">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox8" sid="6860329354417663">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7856519829758331">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text2" sid="3841013644300298">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="1384693905167901">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text3" sid="189597708456112">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7780868550821443">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text4" sid="9168810282432567">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2233933987847335">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text5" sid="4258100814554703">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4743548192648206">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextSpeed" sid="8528496699715049">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3281799964260834">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextPosi" sid="941940387409945">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4941220573147783">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextTime" sid="929134663719603">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="1942755196098653">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBoxV" sid="245120639409657">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4199283272726391">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBoxS" sid="9073642173678543">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2588982488712931">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBoxA" sid="9846015943315596">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="132233298918408">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBoxT" sid="3366379495291977">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="6425414337639326">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="ButtonOk" sid="4262695605418471">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="9587374765718725">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="textAcc" sid="6570219177462991">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2335123232789088">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text6" sid="2170004364880205">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7896939898700119">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text7" sid="9449778729685055">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="1196614609685833">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text8" sid="2848450352190434">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="674889796714758">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text9" sid="7316561621389884">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text10" sid="4920793814125663">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text11" sid="1120095138398429">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text12" sid="7816121012601454">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button5" sid="2128217809251481">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Text13" sid="5229548619385268">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="5900609882616894">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Sprite" sid="8545806422402369">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7319986886866609" speed="5">
+                    <frame duration="1" hotspotX="0.500478" hotspotY="0.502488" original-source="E:\Game Plot\Untitled-1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="2991853693371568">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1117879988059429" speed="5">
+                    <frame duration="1" hotspotX="0.501199" hotspotY="0.502591" original-source="E:\Game Plot\Untitled-2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text14" sid="989485548159985">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite5" sid="6117914043463242">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3754431358585348" speed="5">
+                    <frame duration="1" hotspotX="0.500478" hotspotY="0.502488" original-source="E:\Game Plot\Untitled-1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="3145721254324548">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1042737581836286" speed="5">
+                    <frame duration="1" hotspotX="0.500478" hotspotY="0.502488" original-source="E:\Game Plot\Untitled-1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text15" sid="3764472583692183">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="5925182960625323">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="2658641973902822">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Game Plot\d7c9ea500ff72b01e5e71963225e56e5.jpg" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="5546164099245657">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Game Plot\grid_paper_0.5cm_square_460_0.jpg" />
+        </object-type>
+        <object-type name="Sprite7" sid="6071230782697767">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7375705147371468" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Game Plot\grid_paper_0.5cm_square_460_0.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="2755288891948523">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="1041476852043568">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1097108226313234" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Game Plot\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="8279591894841761">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4555319443374466" speed="5">
+                    <frame duration="1" hotspotX="8.66667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="667441203179952">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="started2" sid="6721474069804281" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="2961879741725054">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="1147665549563133">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2620585208713596" speed="5">
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.514286" original-source="E:\Game Plot\air.png">
+                        <collision-poly>
+                            <point x="0.0253165" y="0.06" />
+                            <point x="0.49789" y="0.39" />
+                            <point x="0.797468" y="0.48" />
+                            <point x="0.848101" y="0.5" />
+                            <point x="0.92827" y="0.83" />
+                            <point x="0.49789" y="0.99" />
+                            <point x="0.156118" y="0.63" />
+                            <point x="0.0126582" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="4237285403827043">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="user_height" sid="6887981134222629" type="number" />
+                <instance-variable name="started" sid="6569755442568855" type="number" />
+                <instance-variable name="inHeight" sid="3677945765674876" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="4238811144560843">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="8165975568581108">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="38491553086793">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5911143346864783" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="E:\Game Plot\box.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1" y="0.888889" />
+                            <point x="0" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform2" sid="6442568493555187">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4334344911626587">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="2241696704124195">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6650912237163899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform3" sid="9488265871608359">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1263744320203446">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="1289542673197564">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5622469858992407" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox9" sid="784503874867792">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4273118212344044">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Button6" sid="2072807306242237">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2628771748651127">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox10" sid="4948789012440633">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="6065440826560506">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Keyboard" sid="4397141991179801">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite12" sid="7195576666693102">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="9775871376916582">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7928763754222843" speed="5">
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.502924" original-source="E:\Game Plot\obs.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0017094" y="0.99537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox11" sid="9206975475626896">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="9430072853452273">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox12" sid="247502325383639">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="5971993336810966">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox13" sid="5672337533288709">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3726557728528592">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox14" sid="203813849295763">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="2714623466501987">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Game Plot\grid_paper_0.5cm_square_460_0.jpg" />
+        </object-type>
+        <object-type name="droppoint" sid="3296106499626212">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5161439468882844" speed="5">
+                    <frame duration="1" hotspotX="8.66667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="landpoint" sid="7068872146083485">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6207247245255452" speed="5">
+                    <frame duration="1" hotspotX="8.66667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="userpoint" sid="6104656576327">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8743750721138934" speed="5">
+                    <frame duration="1" hotspotX="8.66667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text16" sid="8138495499547422">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="5765903820589372">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text17" sid="745923814004481">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text18" sid="3410580349611035">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite16" sid="5515782891961425">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2092198557480734" speed="5">
+                    <frame duration="1" hotspotX="8.66667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform4" sid="8024739448233548">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5277444710477596">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="503188142187102">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9578811583130361" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dist1" sid="4881422970800887">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7949020842856082">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7586801121419116" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="2.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text19" sid="6478329033628308">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="dist2" sid="9887834558153143">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4033812197273742">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4441038329015897" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="2.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text20" sid="6947483761800914">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button7" sid="4466460222191119">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="8658955845355862">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Sprite13" sid="4813219796435192">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="8347539969250584">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2711254749928026" speed="5">
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.502924" original-source="E:\Game Plot\obs.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0017094" y="0.99537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text21" sid="8386827140919402">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7154732613237872">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text22" sid="1122381451759632">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="9267628002185664">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="tmof" sid="7089673414231575">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="9559111006674267">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Sprite14" sid="4027143256341712">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2073184611040986" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="5731424372354188">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8396012422522847" speed="5">
+                    <frame duration="1" hotspotX="1.81818" hotspotY="0.488095" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform5" sid="6957852878778982">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2813892539270665">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="2772485878064189">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1741435784710067" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="7074921206933635">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="started" sid="4479987189323381" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="6721542866238631">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="9743189049054882">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="1510311317360522">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2726477231409056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="E:\Game Plot\sdfsddgd.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.940887" y="0.492537" />
+                            <point x="0.960591" y="0.880597" />
+                            <point x="0.497537" y="0.447761" />
+                            <point x="0.0394089" y="0.880597" />
+                            <point x="0.0640394" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite18" sid="6547119765142408">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4017310790890355">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="3965755251132476">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="8008420246879055">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8537720069170583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="E:\Game Plot\box2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="6724750324404519">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="6374806614284072">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="2505586741901487">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="9787339316039588">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9720854688853236" speed="5">
+                    <frame duration="1" hotspotX="0.402597" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground5" sid="1445063016343053">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Game Plot\grid_paper_0.5cm_square_460_0.jpg" />
+        </object-type>
+        <object-type name="Sprite20" sid="2949629439946058">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7957166783609604" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503106" original-source="E:\hill.png">
+                        <collision-poly>
+                            <point x="0.15445" y="0.36646" />
+                            <point x="0.5" y="0.546584" />
+                            <point x="0.774869" y="0.534162" />
+                            <point x="0.882199" y="0.496894" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0183246" y="0.956522" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="7510109693387309">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870834483483484" speed="5">
+                    <frame duration="1" hotspotX="0.500503" hotspotY="0.5" original-source="E:\Game Plot\Untitled-2asd.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite22" sid="5465771801711886">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="started" sid="6318011674801802" type="number" />
+                <instance-variable name="y_prev" sid="6690322480163809" type="number" />
+                <instance-variable name="y_cur" sid="6897295288308906" type="number" />
+                <instance-variable name="max" sid="67550279776851" type="number" />
+                <instance-variable name="xm" sid="8974764659568406" type="number" />
+                <instance-variable name="time" sid="5421587656937063" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="5754401676846787">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="5920257273352429">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2083725435844024" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Game Plot\fgdfgd.png">
+                        <collision-poly>
+                            <point x="0.0689655" y="0.2" />
+                            <point x="0.482759" y="0.2" />
+                            <point x="0.896552" y="0.3" />
+                            <point x="0.965517" y="0.5" />
+                            <point x="0.896552" y="0.7" />
+                            <point x="0.103448" y="0.7" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform6" sid="6357552716415061">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1106562041361961">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="6391733409370844">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2089516743882207" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground6" sid="3973120683888139">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Game Plot\grid_paper_0.5cm_square_460_0.jpg" />
+        </object-type>
+        <object-type name="TextBox15" sid="2233563138218443">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7325575778302577">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox16" sid="6068510296116268">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2729561164327074">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox17" sid="4002978141867488">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3203680237825447">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Button8" sid="9915425859554409">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="6678341919196142">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Sprite23" sid="475700513438576">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3237975243690747">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1413799533416999" speed="5">
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.502924" original-source="E:\Game Plot\obs.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0017094" y="0.99537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="droppoint2" sid="2659771885692476">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1409051706339056" speed="5">
+                    <frame duration="1" hotspotX="8.66667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="6893028331355006">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite24" sid="337112226228433">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3995480579250431" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="droppoint3" sid="1121746513690702">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7640318225591993" speed="5">
+                    <frame duration="1" hotspotX="8.66667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="range" sid="34947965228676">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="8851616037744093">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="height" sid="7667274559118975">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="1035811889206541">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="speed" sid="6119017031274832">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="5264690844898474">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Text23" sid="9952411019332148">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4888672654084063">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="path" sid="8927938372730021">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="started" sid="1371672470370409" type="number" />
+                <instance-variable name="y_prev" sid="1481841538575767" type="number" />
+                <instance-variable name="y_cur" sid="3927648854456355" type="number" />
+                <instance-variable name="max" sid="2548591036091316" type="number" />
+                <instance-variable name="xm" sid="1306202176229922" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="9813182807821975">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1387408358293949" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Game Plot\fgdfgd.png">
+                        <collision-poly>
+                            <point x="0.0689655" y="0.2" />
+                            <point x="0.482759" y="0.2" />
+                            <point x="0.896552" y="0.3" />
+                            <point x="0.965517" y="0.5" />
+                            <point x="0.896552" y="0.7" />
+                            <point x="0.103448" y="0.7" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform7" sid="748889593073044">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="72664922985562">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="9516390840746597">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5715423611149531" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox18" sid="96720261801089">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TextBox19" sid="2589442369299">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="bt" sid="6221183931432248">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Sprite25" sid="2993081044560656">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="started" sid="2590135774660958" type="number" />
+                <instance-variable name="y_prev" sid="7480454208566375" type="number" />
+                <instance-variable name="y_cur" sid="5718427005802919" type="number" />
+                <instance-variable name="max" sid="8767466525652937" type="number" />
+                <instance-variable name="xm" sid="7610066554843492" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="7521257230128266">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="4550817650648265">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1661010658702434" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Game Plot\fgdfgd.png">
+                        <collision-poly>
+                            <point x="0.0689655" y="0.2" />
+                            <point x="0.482759" y="0.2" />
+                            <point x="0.896552" y="0.3" />
+                            <point x="0.965517" y="0.5" />
+                            <point x="0.896552" y="0.7" />
+                            <point x="0.103448" y="0.7" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform8" sid="169573789500078">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4803062712708636">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="9712465206032026">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4498111515646304" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground7" sid="8543146162841897">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Game Plot\grid_paper_0.5cm_square_460_0.jpg" />
+        </object-type>
+        <object-type name="platform9" sid="5019626446578885">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3891378128524491">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="1332166811849943">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3768678522304667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509524" original-source="E:\asdas.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground8" sid="125188192678799">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Game Plot\grid_paper_0.5cm_square_460_0.jpg" />
+        </object-type>
+        <object-type name="Sprite26" sid="4241419522188627">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4177880332077945">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2997756091740436" speed="5">
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.502924" original-source="E:\Game Plot\obs.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0017094" y="0.99537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text24" sid="5874786914821126">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="dfgdfg" sid="8018057682883317">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text25" sid="3462182766245815">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text26" sid="8436435002689026">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text27" sid="8024690038498632">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Kinematics.xml</layout>
+        <layout>Layout 2.xml</layout>
+        <layout>Start.xml</layout>
+        <layout>Contents.xml</layout>
+        <layout>Parabola.xml</layout>
+        <layout>inertia.xml</layout>
+        <layout>hProjectile.xml</layout>
+        <layout>hProjectile2.xml</layout>
+        <layout>kin.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Event sheet 5.xml</event-sheet>
+        <event-sheet>Event sheet 6.xml</event-sheet>
+        <event-sheet>Event sheet 7.xml</event-sheet>
+        <event-sheet>Event sheet 8.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="199" />
+        <global-instance type="Keyboard" uid="213" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

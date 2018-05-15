@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 4</name>
+    <events>
+        <variable constant="0" name="tof" sid="3983256394396889" static="0" type="number">0</variable>
+        <variable constant="0" name="stopped" sid="5587886417158935" static="0" type="number">0</variable>
+        <event-block sid="2115085011993944">
+            <conditions>
+                <condition id="0" name="On clicked" sid="309854361393073" type="Button6" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-2" name="Set Y" sid="1883769564473249" type="Sprite10">
+                    <param id="0" name="Y">480-int(textbox10.text)</param>
+                </action>
+                <action id="-10" name="Set value" sid="5613996947050872" type="Sprite11">
+                    <param id="0" name="Instance variable">user_height</param>
+                    <param id="1" name="Value">int(textbox9.Text)</param>
+                </action>
+                <action disabled="1" id="-5" name="Set width" sid="1556400703778761" type="platform3">
+                    <param id="0" name="Width">Sprite11.user_height</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="910653666175291" type="platform3">
+                    <param id="0" name="X">20</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="658808878075674" type="Sprite11">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="595567049253057" type="Sprite11">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="9694649093299337" type="Sprite11">
+                    <param id="0" name="Instance variable">started</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="9515395693214072" type="Sprite10">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="5366995895246744" type="Sprite10">
+                    <param id="0" name="Instance variable">started2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Platform" id="2" name="Set acceleration" sid="8766036868789087" type="Sprite11">
+                    <param id="0" name="Acceleration">int(TextBox12.Text)</param>
+                </action>
+                <action behavior="Platform" id="2" name="Set acceleration" sid="8340757748705004" type="Sprite10">
+                    <param id="0" name="Acceleration">int(textbox12.Text)</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="4473518961846477" type="Sprite11">
+                    <param id="0" name="Max Speed">int(textbox11.Text)</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="2351317965106121" type="Sprite10">
+                    <param id="0" name="Max Speed">int(textbox11.Text)</param>
+                </action>
+                <action id="-1" name="Set X" sid="9172581604029808" type="droppoint">
+                    <param id="0" name="X">Sprite11.user_height</param>
+                </action>
+                <action id="-1" name="Set X" sid="1643848257753736" type="userpoint">
+                    <param id="0" name="X">int(textbox13.Text)</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="4487438675855779" type="dist1">
+                    <param id="0" name="X">droppoint.X-20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3966609802126173">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4786909229021127" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="7575009350021924" type="Sprite10">
+                    <param id="0" name="Pin to">Sprite11</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2017158339397658">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5120671474788921" type="Sprite11">
+                    <param id="0" name="Instance variable">user_height</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="3537964136353796" type="Sprite11">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">Sprite11.user_height-30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pin" disabled="1" id="1" name="Unpin" sid="1352724269302549" type="Sprite10" />
+                <action disabled="1" id="-9" name="Destroy" sid="2129390151340852" type="Sprite10" />
+                <action id="-9" name="Destroy" sid="2446129516400278" type="platform3" />
+                <action id="-9" name="Set value" sid="3472590375615379" type="System">
+                    <param id="0" name="Variable">stopped</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6248093287858705">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7930540070937396" type="Sprite11">
+                    <param id="0" name="Object">platform2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="7889075564345717" type="Sprite11">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="-10" name="Set value" sid="540946427375757" type="Sprite11">
+                    <param id="0" name="Instance variable">started</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="3825535637142616" type="Sprite11">
+                    <param id="0" name="Jump strength">Sprite11.Platform.JumpStrength-300</param>
+                </action>
+                <action id="-1" name="Set X" sid="6922165254547064" type="landpoint">
+                    <param id="0" name="X">Sprite11.X+25</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4129589272991541" type="platform2" />
+                <action behavior="Anchor" disabled="1" id="0" name="Set enabled" sid="1510654413983979" type="dist1">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-5" name="Set width" sid="2847047735811427" type="dist1">
+                    <param id="0" name="Width">abs(landpoint.X-droppoint.X)</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="6112315060718562" type="droppoint">
+                    <param id="0" name="X">dist1.X</param>
+                </action>
+                <action id="-1" name="Set X" sid="5959540866155726" type="dist1">
+                    <param id="0" name="X">((droppoint.X-20)+(dist1.Width)/2)-5</param>
+                </action>
+                <action id="0" name="Set text" sid="376992205723206" type="Text16">
+                    <param id="0" name="Text">dist1.X</param>
+                </action>
+                <action id="0" name="Set text" sid="4308569476575916" type="Text19">
+                    <param id="0" name="Text">abs(int(Sprite11.X-Sprite11.user_height))</param>
+                </action>
+                <action id="-1" name="Set X" sid="2868980519607583" type="Text19">
+                    <param id="0" name="X">droppoint.X+(abs(landpoint.X-droppoint.X)/2)-35</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8245079813519375" type="Sprite11" />
+                <action id="-5" name="Set width" sid="8510783911612528" type="dist2">
+                    <param id="0" name="Width">abs(landpoint.X-userpoint.X)</param>
+                </action>
+                <action id="-1" name="Set X" sid="7249583178632033" type="dist2">
+                    <param id="0" name="X">((landpoint.X-20)+(dist2.Width)/2)-5</param>
+                </action>
+                <action id="0" name="Set text" sid="7367795861948996" type="Text20">
+                    <param id="0" name="Text">int(abs(userpoint.X-landpoint.X))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="9403857393877784">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="9229642394076083" type="landpoint">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">userpoint.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="3116886578060051" type="dist2">
+                            <param id="0" name="X">((landpoint.X-20)+(dist2.Width)/2)-5</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="8181618874432634" type="Text20">
+                            <param id="0" name="X">landpoint.X+(abs(landpoint.X-userpoint.X)/2)-35</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4681067884074035">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="9355752391304595">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="661284958749437" type="landpoint">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">userpoint.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="1978798976542349" type="dist2">
+                            <param id="0" name="X">((userpoint.X-20)+(dist2.Width)/2)-5</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="4419762144400964" type="Text20">
+                            <param id="0" name="X">userpoint.X+(abs(landpoint.X-userpoint.X)/2)-35</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9422341881120404">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="5621575138662211">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4161469261405606" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3916259670341762">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="5413452063358552" type="Sprite11">
+                            <param id="0" name="Instance variable">started</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="8637625471486388" type="Sprite11">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action behavior="Pin" id="1" name="Unpin" sid="5257176460790002" type="Sprite10" />
+                        <action id="0" name="Set text" sid="1898641822285631" type="Text21">
+                            <param id="0" name="Text">int(Sprite10.Platform.Speed)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9347115330709889">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3764994210168404" type="Sprite10">
+                            <param id="0" name="Instance variable">started2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="1136535100815474" type="Sprite10">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2408695869131609">
+            <conditions>
+                <condition id="0" name="On clicked" sid="7809331796549589" type="Button7" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="1102217096023552" type="Sprite11">
+                    <param id="0" name="Y">480-int(TextBox10.Text)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5747000337259481" type="platform3">
+                    <param id="0" name="Y">Sprite11.Y+14</param>
+                </action>
+                <action id="-8" name="Scroll to object" sid="5527140157295066" type="System">
+                    <param id="0" name="Object">Sprite11</param>
+                </action>
+                <action id="0" name="Set text" sid="7618765844583792" type="Text22">
+                    <param id="0" name="Text">480-Sprite11.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1405267086583339">
+            <conditions />
+            <actions />
+            <sub-events>
+                <event-block sid="493431262195233">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2203079322280042">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1317660274840168" type="System">
+                    <param id="0" name="Variable">stopped</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6865896149031401">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="7014044476348775">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1922290447445976">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="568903943892893" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4600702265716118">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6908687482335661" type="System">
+                            <param id="0" name="Variable">stopped</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="2038393809996646" type="System">
+                            <param id="0" name="Variable">tof</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6889175650397819">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="3112798355639497" type="Sprite11" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1998922447202137" type="System">
+                    <param id="0" name="Variable">stopped</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="608493643914243" type="tmof">
+                    <param id="0" name="Text">tof</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6216054514408347">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3605449740252822" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8094980272760697">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4465708328360015" type="System">
+                            <param id="0" name="Variable">stopped</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="364646104459219" type="System">
+                            <param id="0" name="Object to create">path</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">Sprite11.X</param>
+                            <param id="3" name="Y">Sprite11.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

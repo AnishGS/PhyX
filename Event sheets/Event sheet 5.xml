@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 5</name>
+    <events>
+        <event-block sid="9281497205254822">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4813204338626755" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9034515616464949" type="Sprite19">
+                    <param id="0" name="Pin to">Sprite17</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

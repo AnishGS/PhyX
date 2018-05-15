@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 6</name>
+    <events>
+        <event-block sid="3145204477224361">
+            <conditions>
+                <condition id="0" name="On clicked" sid="328716119138042" type="Button8" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="4402445876481085" type="Sprite22">
+                    <param id="0" name="Angle">int(textbox15.Text)*-1</param>
+                </action>
+                <action behavior="Bullet" id="1" name="Set acceleration" sid="4807412291706898" type="Sprite22">
+                    <param id="0" name="Acceleration">int(textbox16.text)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="1283001259925139" type="Sprite22">
+                    <param id="0" name="Speed">int(textbox17.Text)</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="5105886644035371" type="Sprite22">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="6237234138291245" type="Sprite22">
+                    <param id="0" name="Instance variable">started</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6778401281468419">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1409307829830485" type="Sprite22">
+                    <param id="0" name="Object">platform6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="1942528672463001" type="droppoint3">
+                    <param id="0" name="X">droppoint2.X</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6032369679130008" type="Sprite22" />
+                <action id="-1" name="Set X" sid="2432589014473162" type="droppoint2">
+                    <param id="0" name="X">Sprite22.X+Sprite22.Width+5</param>
+                </action>
+                <action id="0" name="Set text" sid="1000175286715584" type="height">
+                    <param id="0" name="Text">&quot;0&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6927998445418113">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9700987756313472" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="2966156956704104">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="377595720302234" type="Sprite22">
+                            <param id="0" name="Instance variable">y_prev</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">sprite22.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="4889826626665682" type="Sprite22">
+                            <param id="0" name="Instance variable">y_prev</param>
+                            <param id="1" name="Value">sprite22.Y+5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="45347093926202">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4207941024460387" type="Sprite22">
+                            <param id="0" name="Instance variable">max</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">sprite22.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="2545415005978621" type="Sprite22">
+                            <param id="0" name="Instance variable">max</param>
+                            <param id="1" name="Value">sprite22.y+10</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="2039354327743868" type="Sprite24">
+                            <param id="0" name="Y">sprite22.max</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3509356330184047">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3833969076833037" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="1469431423613163" type="droppoint2">
+                    <param id="0" name="X">Sprite22.X+Sprite22.Width+5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1323946075205419">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="2477399026405844">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="14897854818354" type="Sprite22">
+                            <param id="0" name="Instance variable">started</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="7272662536493148" type="range">
+                            <param id="0" name="Text">int(sprite22.X)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5527959355028643" type="height">
+                            <param id="0" name="Text">int(480-sprite22.Y)-24</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5732721648798824" type="speed">
+                            <param id="0" name="Text">int(sprite22.Bullet.Speed)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1788922335233689" type="Text23">
+                            <param id="0" name="Text">int(sprite22.Bullet.DistanceTravelled)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7204349013866892" type="Text24">
+                            <param id="0" name="Text">int(sprite22.time)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4586395240636021">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="6563085329506305">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9864596425688858" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8488836669878756">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8528295832125823" type="Sprite22">
+                            <param id="0" name="Instance variable">started</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="7713222909802064" type="System">
+                            <param id="0" name="Object to create">path</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">sprite22.X</param>
+                            <param id="3" name="Y">sprite22.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4432309883084146">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5003452056214137" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3432952150114394">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1995451010137139" type="Sprite22">
+                            <param id="0" name="Instance variable">started</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="9670956891633711" type="Sprite22">
+                            <param id="0" name="Instance variable">time</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
