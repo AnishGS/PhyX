@@ -9,10 +9,10 @@ You must own a copy of [Construct2](https://www.scirra.com/construct2) game engi
 ## SystemScreenshots
 
 ### Horizontal projectile Simulation.
-![game](https://github.com/AnishGS/PhyX/blob/master/screenshots/parabola.gif);
+                   ![game](https://github.com/AnishGS/PhyX/blob/master/screenshots/projectile.gif);
 
 ### Vertical projectile Simulation.
-![game](https://github.com/AnishGS/PhyX/blob/master/screenshots/plane.gif);
+                   ![game](https://github.com/AnishGS/PhyX/blob/master/screenshots/plane.gif);
 
 ### Car Simulation.
-![game](https://github.com/AnishGS/PhyX/blob/master/screenshots/car.gif);
+                    ![game](https://github.com/AnishGS/PhyX/blob/master/screenshots/car.gif);
